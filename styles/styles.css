@@ -1,0 +1,136 @@
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/child returned home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.report-page {
+    background-image: url('images/child\ pulled\ from\ river.jpg'); 
+}
+
+#alert-box {
+
+    border: 5px solid orange;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    animation: blink 1s infinite alternate;
+}
+
+#alert-message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    animation: blink 1s infinite alternate;
+}
+
+.sidenav {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(102, 15, 15);
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color:blanchedalmond;
+    display: block;
+}
+
+#main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#report-form {
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    border:5px solid red;
+    width: 300px;
+    background-color: color(from color srgb r g b);
+    margin-top: 75%;
+    margin-bottom: 50%;
+    color:blanchedalmond;
+}
+
+#contact-form {
+    background-color: rgb(128, 110, 110);
+    padding: 20px;
+    border: 5px solid orange; 
+    border-radius: 10px;
+}
+
+#view-missing {
+    
+    padding: 50px;
+    width: 150%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+}
+
+#missing-persons-list {
+    margin-top: -55px;
+    margin-bottom: 300px;
+}
+
+.person {
+    margin-left: 150px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    margin-top:50px;
+    
+}
+
+.person h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.person p {
+    margin: 10px 0;
+}
+
+.person img {
+    max-width: 50%;
+    height: 100%;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}

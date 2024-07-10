@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Missing Person</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="report-page">
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="contact_local_police.html">Contact Local Police Station</a>
+        <a href="view_missing_persons.html">View Missing Persons by Location</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="signup.html">Sign-Up</a>
+        <a href="login.html">Log In</a>
+    </div>
+    <div id="main-content">
+        <div id="report-form">
+            <h1>Report Missing Person</h1>
+            <div id="alert-box-background">
+                <h2>Instructions:</h2>
+                <p>Please fill out the form below to report a missing person. Attach a clear picture of the missing person if available.</p>
+            </div>
+            <form action="submit_report.php" method="POST" enctype="multipart/form-data">
+                <label for="person-name">Person's Name:</label><br>
+                <input type="text" id="person-name" name="person-name" required><br><br>
+                
+                <label for="last-seen-location">Last Seen Location:</label><br>
+                <input type="text" id="last-seen-location" name="last-seen-location" required><br><br>
+                
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" required></textarea><br><br>
+                
+                <label for="image">Upload Picture:</label><br>
+                <input type="file" id="image" name="image" accept="image/*" required><br><br>
+                
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
