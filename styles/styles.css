@@ -14,7 +14,7 @@ body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('images/child returned home.jpg');
+    background-image: url('../images/child returned home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 }
 
 body.report-page {
-    background-image: url('images/child pulled from river.jpg');
+    background-image: url(../'images/child pulled from river.jpg');
 }
 
 #alert-box {
