@@ -1,63 +1,78 @@
-#Amber Alert Web App
+Amber Alert Web Application
+This is a web application designed to facilitate the reporting and viewing of missing persons, contact local police stations, and manage user authentication. The application features pages for reporting missing persons, contacting police, viewing missing persons by location, user registration, login, and password reset.
 
-This project is an Amber Alert web application created as a school project. The app allows users to report missing persons, view missing persons by location, and contact local police stations. Users can also upload pictures and descriptions of missing persons, and the app will alert the local police station.
+Table of Contents
+Project Overview
+Features
+Installation
+Usage
+File Structure
+Deployment
+Contributing
+License
+Project Overview
+The Amber Alert Web Application is built to assist in the timely reporting and dissemination of information regarding missing persons. It includes functionalities for users to report missing persons, contact local authorities, and view reports by location. User authentication features such as registration, login, and password reset are also implemented.
 
-#Features
+Features
+Report Missing Persons: Users can fill out a form to report missing persons, including uploading a picture and providing details.
+Contact Local Police: Users can contact local police stations by providing their details and selecting a location.
+View Missing Persons: Users can view reported missing persons by location.
+User Authentication: Users can sign up, log in, and reset their passwords.
+Responsive Design: The application is designed to be responsive and accessible on various devices.
+Installation
+To set up the project locally, follow these steps:
 
-Report missing persons with an image and description
-View missing persons by location
-Contact local police stations
-User authentication (Sign-up and Log in)
-Responsive design
-#Tech Stack
-The project is built using the following technologies:
+Clone the repository:
 
-HTML: For structuring the content of the web app.
-CSS: For styling the web app, including a dark red background and orange borders.
-JavaScript: For adding interactivity and handling user inputs.
 
-#File Structure
-index.html
-├── report_missing_person.html
-├── view_missing_persons.html
-├── contact_us.html
-├── sign_up.html
-├── log_in.html
-├── styles
-│   ├── main.css
-│   ├── report.css
-│   └── navbar.css
-├── scripts
-│   ├── main.js
-│   └── report.js
+git clone https://github.com/ntswaki1934/amber-alert-web-app.git
+Navigate to the project directory:
+
+
+cd amber-alert-web-app
+Open the index.html file in your web browser to view the application.
+
+Usage
+Reporting a Missing Person
+Navigate to the Report Missing Person page.
+Fill out the form with the person's name, last seen location, description, and upload a picture.
+Submit the form.
+Contacting Local Police
+Navigate to the Contact Local Police Station page.
+Fill out the contact form with your details and select the location.
+Submit the form.
+Viewing Missing Persons
+Navigate to the View Missing Persons by Location page.
+Select the desired location to view the list of missing persons.
+User Authentication
+Sign Up: Navigate to the Sign-Up page, fill out the registration form, and submit.
+Log In: Navigate to the Log In page, enter your username and password, and submit.
+Reset Password: Navigate to the Reset Password page, enter your email to receive an OTP, and reset your password.
+File Structure
+perl
+Copy code
+amber-alert-web-app/
+│
+├── index.html
+├── report-missing.html
+├── contact-police.html
+├── view-missing.html
+├── about-us.html
+├── sign-up.html
+├── log-in.html
+├── reset-password.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   ├── script.js
+│   ├── login-script.js
+│   └── reset-password-script.js
+│
+├── images/
+│   ├── child-pulled-from-river.jpg
+│   └── ...
+│
 └── README.md
 
-#Pages and Navigation
-Home Page (index.html)
-The home page contains general information and navigation to other parts of the web app.
-
-Report Missing Person (report_missing_person.html)
-Allows users to report a missing person by filling out a form and uploading a picture.
-
-View Missing Persons (view_missing_persons.html)
-Displays missing persons by location.
-
-Contact Us (contact_us.html)
-Provides contact information for local police stations.
-
-Sign Up (sign_up.html) & Log In (log_in.html)
-Pages for user authentication.
-
-Side Navigation Bar
-The side navigation bar includes the following options:
-
-Report Missing Person
-Contact Local Police Station
-View Missing Persons by Location
-Contact Us
-Sign Up
-Log In
-The navigation bar is styled with a scrollbar for easy navigation through the options.
-
-#Contribution
-Contributions are welcome! Please create an issue or submit a pull request for any enhancements or bug fixes.

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber Alert</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidenav">
+        <a href="index.html">Home</a>
         <a href="report-missing.html">Report Missing Person</a>
         <a href="contact-police.html">Contact Local Police Station</a>
         <a href="view-missing.html">View Missing Persons by Location</a>
@@ -16,11 +17,18 @@
         <a href="log-in.html">Log In</a>
     </div>
     <div id="main-content">
-        <div id="alert-box">
-            <h1>Amber Alert!!!</h1>
-            <p id="alert-message">This is an Amber Alert notification.</p>
-        </div>
+        <form id="login-form">
+            <h2>Log In</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Log In</button>
+        </form>
+        <div id="login-message" style="display:none; margin-top:20px;"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="login-script.js"></script>
 </body>
 </html>

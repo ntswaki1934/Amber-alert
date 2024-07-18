@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Local Police</title>
+    <title>Contact Local Police Station</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="contact-page">
     <div class="sidenav">
         <a href="index.html">Home</a>
-        <a href="report_missing_person.html">Report Missing Person</a>
-        <a href="view_missing_persons.html">View Missing Persons by Location</a>
-        <a href="contact_us.html">Contact Us</a>
-        <a href="signup.html">Sign-Up</a>
-        <a href="login.html">Log In</a>
+        <a href="report-missing.html">Report Missing Person</a>
+        <a href="view-missing.html">View Missing Persons by Location</a>
+        <a href="about-us.html">Contact Us</a>
+        <a href="sign-up.html">Sign-Up</a>
+        <a href="log-in.html">Log In</a>
     </div>
     <div id="main-content">
         <div id="contact-form">
-            <h1>Contact Local Police</h1>
-            <form action="submit_contact.php" method="POST">
-                <label for="user-name">Your Name:</label><br>
-                <input type="text" id="user-name" name="user-name" required><br><br>
-                
-                <label for="user-email">Your Email:</label><br>
-                <input type="email" id="user-email" name="user-email" required><br><br>
-                
-                <label for="police-station">Police Station Name:</label><br>
-                <input type="text" id="police-station" name="police-station" required><br><br>
-                
-                <label for="police-address">Police Station Address:</label><br>
-                <textarea id="police-address" name="police-address" rows="4" required></textarea><br><br>
-                
+            <h1>Contact Local Police Station</h1>
+            <div id="alert-box-background">
+                <h2>Instructions:</h2>
+                <p>Please fill out the form below to contact your local police station. Provide as much detail as possible to help us assist you better.</p>
+            </div>
+            <form id="contact-police-form" action="submit_contact.php" method="POST" onsubmit="return validateForm()">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Your Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="location">Your Location:</label><br>
+                <select id="location" name="location" required>
+                    <option value="">Select Location</option>
+                    <option value="New York">New York</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Houston">Houston</option>
+                    <option value="Phoenix">Phoenix</option>
+                    <!-- Add more locations as needed -->
+                </select><br><br>
+
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
                 
                 <button type="submit">Submit</button>
             </form>
+            <div id="form-message" style="display:none; margin-top:20px; color: green;">Your message has been sent successfully!</div>
         </div>
     </div>
+    <script src="contact.js"></script>
 </body>
 </html>
+
