@@ -1,0 +1,135 @@
+/* Define rose gold colors */
+:root {
+    --rose-gold: #b76e79;
+    --rose-gold-light: #ffcccb;
+    --rose-gold-dark: #8b5f67;
+    --gold: #ffd700;
+    --soft-pink: #ffb6c1;
+    --light-gray: #f0f0f0;
+    --dark-gray: #4a4a4a;
+    --white: #ffffff;
+}
+
+/* General body styling */
+body {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--rose-gold);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: var(--gold);
+}
+
+/* Intro section styling */
+.intro {
+    background-image: url('path/to/cover-image.jpg');
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    color: var(--rose-gold-light);
+}
+
+.intro p {
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.intro .button {
+    background-color: var(--rose-gold-dark);
+    border: none;
+    color: var(--white);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.intro .button:hover {
+    background-color: var(--gold);
+}
+
+/* Features section styling */
+.features {
+    background-color: var(--white);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    color: var(--rose-gold);
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    color: var(--rose-gold-dark);
+    margin-top: 10px;
+}
+
+.feature p {
+    color: var(--dark-gray);
+}
+
+/* About section styling */
+.about {
+    background-color: var(--rose-gold-light);
+    color: var(--dark-gray);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: var(--rose-gold-dark);
+    margin-bottom: 40px;
+}
+
+.about p {
+    color: var(--dark-gray);
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.about .social-links a {
+    color: var(--rose-gold-dark);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.about .social-links a:hover {
+    color: var(--gold);
+}
+
